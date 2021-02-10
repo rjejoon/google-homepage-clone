@@ -7,7 +7,7 @@ The screenshot of the target webpage is taken on Feb 9, 2021.
 ## Getting Started
 Clone this repository:
 ```
-$ git clone https://github.com/rjejoon/google-search-clone
+$ git clone https://github.com/rjejoon/google-search-clone.git
 ```
 Open the file to view the cloned webpage: 
 ```
