@@ -1,4 +1,4 @@
-# Google Search Page Clone 
+# Google Homepage Clone 
 
 A clone of Google webpage that comes up after searching up _github_.
 
