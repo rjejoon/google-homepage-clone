@@ -1,6 +1,6 @@
 :root {
     --navbar-height: 6vh;
-    --footer-height: 4.8vh;
+    --footer-height: 4.2vh;
 }
 
 html {
@@ -22,11 +22,14 @@ a {
 }
 
 .navbar {
-    max-width: 100%;
-    height: var(--navbar-height);
     display: flex;
     justify-content: space-between;
+
     padding: 0 24px 0 24px;
+    width: calc(100vw - 24px * 2);
+    height: var(--navbar-height);
+
+    position: fixed;
 }
 
 .navbar-container {
@@ -38,16 +41,18 @@ a {
 
 .footer {
     display: flex;
-    height: var(--footer-height);
-    max-width: 100%;
     justify-content: space-between;
     align-items: center;
+
     padding: 0 32px 0 32px;
+    width: calc(100vw - 32px * 2);
+    height: var(--footer-height);
+
     background-color: rgb(242, 242, 242); 
     color: rgba(0,0,0,.54);
 
-    position: relative;
-    top: calc(100vh - var(--navbar-height) - var(--footer-height) * 2 - 1px);
+    position: fixed;
+    top: calc(100vh - var(--footer-height));
 }
 
 .footer-container {
@@ -59,6 +64,12 @@ a {
 
 .footer-hyperlink {
     color: #70757a;
+}
+
+#google-logo {
+    display: block;
+    margin: auto;
+    padding: 20vh 0 0 0;
 }
 
 #menu-button {
@@ -90,7 +101,7 @@ a {
     justify-content: center;
     align-items: center;
 
-    height: 60%;
+    height: 55%;
     width: 96px;
     background-color: #1a73e8;
     border: 1px solid transparent;
@@ -98,10 +109,6 @@ a {
     color: white;
     user-select: none;
     -webkit-user-select: none; /* Safari */
-}
-
-#top-footer {
-    border-bottom: 1px solid #dadce0;
 }
 
 #footer-lcontainer {
