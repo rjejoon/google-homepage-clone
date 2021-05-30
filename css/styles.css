@@ -1,6 +1,6 @@
 :root {
-    --navbar-height: 6vh;
-    --footer-height: 4.2vh;
+    --navbar-height: 60px;
+    --footer-height: 41px;
     --google-logo-top: 20vh;
 }
 
@@ -22,7 +22,7 @@ a {
 
 }
 
-.navbar {
+#navbar {
     display: flex;
     justify-content: space-between;
 
@@ -55,7 +55,38 @@ a {
     font-size: 16px;
 }
 
-.footer {
+#button-container {
+    display: flex;
+    width: 280px;
+    height: 35px;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 13px;
+
+    user-select: none;
+}
+
+.main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f8f9fa;
+    width: 130px;
+    height: 100%;
+
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+
+    line-height: 100%;
+    color: #202124;
+}
+
+.main-button > span {
+}
+
+#footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,7 +170,7 @@ a {
     align-items: center;
     padding: 24px;
 
-    height: 100px;
+    height: 112px;
 
     position: relative;
     top: var(--google-logo-top);
@@ -211,4 +242,9 @@ a {
     background-color: #fff;
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-color: rgba(223,225,229,0);
+}
+
+.main-button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    border: 1px solid #dadce0;
 }
