@@ -4,9 +4,7 @@ This project is for practicing HTML and CSS.
 
 
 ## Getting Started
-Clone this repository and view the webpage:
-```
-$ open index.html
-```
+View the cloned webpage: https://rjejoon.github.io/google-homepage-clone/
+
 
 
