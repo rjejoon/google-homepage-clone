@@ -2,6 +2,8 @@
     --navbar-height: 60px;
     --footer-height: 41px;
     --google-logo-top: 20vh;
+    --footer-lcontainer-width: 300px;
+    --footer-rcontainer-width: 190px;
 }
 
 html {
@@ -11,7 +13,7 @@ html {
 
 body {
     min-height: 100%;
-    width: 100%;
+    width: auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
 }
@@ -19,7 +21,6 @@ body {
 a {
     color: black;
     text-decoration: none;
-
 }
 
 #navbar {
@@ -93,7 +94,7 @@ a {
 
     padding: 0 32px 0 32px;
     width: calc(100vw - 32px * 2);
-    height: var(--footer-height);
+    min-height: var(--footer-height);
 
     background-color: rgb(242, 242, 242); 
     color: rgba(0,0,0,.54);
@@ -184,7 +185,7 @@ a {
     border: 1px solid #dfe1e5;
     border-radius: 50px;
     height: 44px;
-    width: 482px;
+    width: 576px;
 
     padding: 0 12px 0 12px;
 }
@@ -200,11 +201,11 @@ a {
 }
 
 #footer-lcontainer {
-    width: 300px;
+    width: var(--footer-lcontainer-width);
 }
 
 #footer-rcontainer {
-    width: 190px;
+    width: var(--footer-rcontainer-width);
 }
 
 
@@ -247,4 +248,26 @@ a {
 .main-button:hover {
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
     border: 1px solid #dadce0;
+}
+
+@media only screen and (max-width: 600px) {
+    #mid-container {
+        padding: 24px 0 24px 0;
+    }
+
+    #search-box {
+        width: calc(100% - 24px - 2px);     
+        align-self: stretch;
+    }
+
+    #footer {
+        height: calc(var(--footer-height) * 2);
+        top: calc(100vh - (var(--footer-height) * 2));
+        flex-flow: column;
+    }
+
+    .footer-container {
+        height: 50%;
+        margin: auto;
+    }
 }
