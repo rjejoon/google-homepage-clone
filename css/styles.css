@@ -66,6 +66,8 @@ a {
     font-size: 13px;
 
     user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
 }
 
 .main-button {
@@ -100,7 +102,7 @@ a {
     color: rgba(0,0,0,.54);
 
     position: fixed;
-    top: calc(100vh - var(--footer-height));
+    top: calc(100% - var(--footer-height));
 }
 
 .footer-container {
@@ -117,6 +119,7 @@ a {
 .no-userselect {
     user-select: none;
     -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
 }
 
 #google-logo {
